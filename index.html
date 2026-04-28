@@ -27,15 +27,27 @@
 </header>
 
 <div id="menu-container" class="menu-container">
-
-    <button id="menu-toggle" class="menu-btn">☰</button>
-
     <nav id="sidebar" class="sidebar">
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#publications">Publications</a>
-        <a href="#hobby">Hobby</a>
-    </nav>
+		<a href="#about">
+			<span class="icon">A</span>
+			<span class="text">About</span>
+		</a>
+
+		<a href="#research">
+			<span class="icon">R</span>
+			<span class="text">Research</span>
+		</a>
+
+		<a href="#publications">
+			<span class="icon">P</span>
+			<span class="text">Publications</span>
+		</a>
+
+		<a href="#hobby">
+			<span class="icon">H</span>
+			<span class="text">Hobby</span>
+		</a>
+	</nav>
 
 </div>
 
@@ -47,7 +59,7 @@
 
     <p>
         Hi, I’m Nhung - you can also call me Vel. Welcome to my page.
-        I am currently a PhD candidate in Cyber Security at the University of Queensland.
+        I am currently a PhD candidate in Cyber Security at the University of Queensland, Australia.
     </p>
 
     <p>
@@ -70,19 +82,23 @@
 
 </section>
 
-<section id="projects">
-    <h2>Projects</h2>
+<section id="research">
+    <h2>Researchs</h2>
 
-    <div class="project">
+    <div class="research">
 
         <h3>AV-ODF (Autonomous Vehicle Offence–Defence Framework)</h3>
         <p>
 			A knowledge-based framework for analysing cyber attacks and attacker behaviour in autonomous vehicles across multiple phases.
-			It organises attack techniques in a structured way and maps them to mitigation strategies,
-			helping to understand how threats evolve and propagate in vehicle systems.
+			It organises attack techniques in a structured way and maps them to mitigation strategies, helping to understand how threats evolve and propagate in vehicle systems.
 		</p>
 
-        <p class="project-links">
+		<p>
+			The framework also connects attack techniques to cyber resilience strategies based on NIST SP 800-160,
+			and to system-level security controls based on NIST SP 800-53, providing a clear link between attacks, defences, and system design.
+		</p>
+
+        <p class="research-links">
             <a href="https://ziz0301.github.io/AVODF/index.html#" target="_blank">Project Page</a> |
             <a href="https://github.com/ziz0301/AVODF" target="_blank">Source Code</a>
         </p>
@@ -90,16 +106,15 @@
     </div>
 
 
-    <div class="project">
+    <div class="research">
 
-        <h3>UGV-ODF (Unmanned Ground Vehicle Threat Matrix)</h3>
+        <h3>UV-ODF (Unmanned Vehicle Threat Matrix)</h3>
         <p>
-            An extension of the AV framework to unmanned ground vehicles.
-            This project focuses on mapping threats and defensive strategies
-            for military and robotic vehicle systems.
+            An extension of the AV framework to unmanned ground vehicles, including UGVs, UAVs, USVs.
+            This project focuses on mapping threats and defensive strategies for military and robotic vehicle systems.
         </p>
 
-        <p class="project-links">
+        <p class="research-links">
             <a href="https://ziz0301.github.io/UGVThreatMatrix/#" target="_blank">Project Page</a> |
             <a href="https://github.com/ziz0301/UGVThreatMatrix" target="_blank">Source Code</a>
         </p>
@@ -107,16 +122,15 @@
     </div>
 
 
-    <div class="project">
+    <div class="research">
 
         <h3>CARLASec</h3>
         <p>
             A simulation framework built on CARLA to study the safety impact of cyber attacks.
-            It allows testing different attack scenarios, such as CAN and UDS-based attacks,
-            and observing how they affect vehicle behaviour in real time.
+            It allows testing different attack scenarios, such as CAN and UDS-based attacks, and observing how they affect vehicle behaviour in real time.
         </p>
 
-        <p class="project-links">
+        <p class="research-links">
             <a href="https://nervous-pleasure-bc6.notion.site/CARLASec-Installing-700f139d60f4428a93500b65cbe41fb5?pvs=74" target="_blank">Installation Guide</a> |
             <a href="https://github.com/ziz0301/CarlasecWSL" target="_blank">Source Code</a>
         </p>
@@ -124,16 +138,20 @@
     </div>
 
 
-    <div class="project">
+    <div class="research">
 
         <h3>AVHARM</h3>
         <p>
-			The framework also connects attack techniques to cyber resilience strategies based on NIST SP 800-160,
-			and to system-level security controls based on NIST SP 800-53,
-			providing a clear link between attacks, defences, and system design.
+			A hierarchical modelling approach for analysing security risks in vehicle systems.
+			It represents the system using structured models and evaluates how vulnerabilities can propagate and lead to system compromise and safety impact.
 		</p>
 
-        <p class="project-links">
+		<p>
+			The approach combines attack graphs, attack fault trees, and attack countermeasure trees.
+			Vehicle systems are modelled in a structured, JSON-based format, enabling systematic analysis of attack paths, risks, and defence effectiveness.
+		</p>
+
+        <p class="research-links">
 			<a href="https://ziz0301.github.io/AVHARM/index.html" target="_blank">Visualisation</a> |
             <a href="https://github.com/ziz0301/AVHARM" target="_blank">Source Code</a>
         </p>
@@ -210,12 +228,10 @@
         In the meantime, outside of research, I enjoy doing simple and creative things.
         I like knitting, drawing, watching movies, playing video games and spending time playing with my kid.
     </p>
-
     <p>
         I also enjoy quiet moments, reading calm texts, taking care of indoor plants,
         and telling small, simple stories.
     </p>
-
     <p>
         I believe life should have a balance. Even though my work is structured,
         I try to keep my daily life gentle, creative, and a little bit playful.
