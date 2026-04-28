@@ -89,7 +89,7 @@ h3 {
     height: 90px;
     border-radius: 50%;
     object-fit: cover;
-    border: 2px solid var(--green-main);
+    border: 2px solid var(--green-light);
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 .profile h1{
