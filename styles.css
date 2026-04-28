@@ -1,6 +1,3 @@
-/* =========================
-   FONTS
-========================= */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Oswald:wght@400;600&display=swap');
 
 :root {
@@ -10,16 +7,9 @@
     --text-dark: #2f3e2f;
 }
 
-/* =========================
-   BASE
-========================= */
 html {
     scroll-behavior: smooth;
 }
-
-/* =========================
-   TEXT BASE
-========================= */
 body {
     margin: 0;
     font-family: 'Inter', sans-serif;
@@ -35,26 +25,36 @@ p {
     line-height: 1.7;
     margin-bottom: 12px;
 }
-
 h2 {
     font-size: 1.8rem;
 	font-family: 'Oswald', sans-serif;
 }
-
 h3 {
     font-size: 1.3rem;
 	font-family: 'Oswald', sans-serif;
 }
 
-/* =========================
-   CENTER CONTAINER
-========================= */
 .content {
     width: 80%;
     max-width: 1000px;
     margin: 0 auto;
     padding-top: 80px;
 }
+
+section {
+    background: var(--green-light);
+    padding: 40px;
+    margin-bottom: 40px;
+    border-radius: 20px;
+    font-size: 1.05rem;  
+	scroll-margin-top: 120px;
+
+}
+section h2 {
+    font-family: 'Oswald', sans-serif;
+    margin-bottom: 20px;
+}
+
 
 /* =========================
    HEADER
@@ -63,27 +63,22 @@ h3 {
     text-align: center;
     margin-top: 151px;
 }
-
 .header h1 {
     font-family: 'Oswald', sans-serif;
     font-size: 2.5rem;
     margin-bottom: 10px;
 }
-
 .header a {
     color: var(--green-main);
     text-decoration: none;
 }
-/* Profile layout */
+
 .profile {
     display: flex;
     align-items: center;
     justify-content: center;
 	flex-direction: column;
 }
-
-
-/* Circular image */
 .profile img {
     width: 90px;
     height: 90px;
@@ -106,57 +101,51 @@ h3 {
     transform: translateX(-50%);
     z-index: 1000;
 }
-
 .sidebar {
     display: flex;
-    gap: 10px;
+    gap: 4 px;
     background: var(--green-soft);
-    padding: 10px 20px;
+    padding: 5px 5px;
     border-radius: 50px;
     backdrop-filter: blur(10px);
+    align-items: center;
+    text-decoration: none;
+    color: #333;
+    transition: background 0.2s ease;
 }
-
 .sidebar a {
+	display: flex;
+	align-items: center;
+	gap: 8px; 
     text-decoration: none;
     color: white;
     padding: 8px 16px;
     border-radius: 50px;
     transition: 0.3s;
 }
-
-/* Hover */
 .sidebar a:hover {
     background: rgba(255,255,255,0.2);
 }
-
-/* Active section */
 .sidebar a.active {
     background: white;
     color: var(--green-main);
 }
-
-/* Hide toggle button (not needed now) */
-.menu-btn {
-    display: none;
+.icon {
+    width: 20px;
+    height: 20px;
+    border-radius: 8px; /* rounded square */
+    background-color: transparent;
+	border: 1.5px solid var(--green-light);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 10px;
+}
+.text {
+    font-size: 12px;
 }
 
-/* =========================
-   SECTIONS
-========================= */
-section {
-    background: var(--green-light);
-    padding: 40px;
-    margin-bottom: 40px;
-    border-radius: 20px;
-    font-size: 1.05rem;  
-	scroll-margin-top: 120px;
-
-}
-
-section h2 {
-    font-family: 'Oswald', sans-serif;
-    margin-bottom: 20px;
-}
 
 /* =========================
    LIST
@@ -192,47 +181,64 @@ ul {
     font-size: 0.95rem;
     color: #4a5d4a;
 }
+
 /* =========================
    PROJECTS
 ========================= */
-
-.project {
+.research {
     margin-bottom: 30px;
     padding: 20px;
     background: white;
     border-radius: 15px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.05);
 }
-
-.project h3 {
+.research h3 {
     margin-bottom: 10px;
 }
-
-.project p {
+.research p {
     margin-bottom: 10px;
     line-height: 1.6;
 }
-
-.project-links a {
+.research-links a {
     color: var(--green-main);
     text-decoration: none;
     font-weight: 500;
 }
-
-.project-links a:hover {
+.research-links a:hover {
     text-decoration: underline;
 }
 
 /* =========================
    RESPONSIVE
 ========================= */
+
 @media (max-width: 768px) {
     .content {
-        width: 90%;
+        width: 92%;
     }
-
+    .menu-container {
+        top: 10px;          
+    }
     .sidebar {
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
         justify-content: center;
+
+        padding: 6px 8px;      
+        gap: 6px;              
+    }
+    .sidebar a {
+        padding: 6px 10px;   
+        gap: 6px;
+
+        font-size: 13px;      
+    }
+    .icon {
+        width: 22px;           
+        height: 22px;
+        font-size: 11px;
+        border-radius: 6px;
+    }
+    .text {
+        font-size: 13px;
     }
 }
